@@ -8,11 +8,11 @@ import { router } from './routes';
 function App() {
   const [themeConfig, setThemeConfig] = useState<ThemeConfig>({
     token: {
-      colorPrimary: '#ff6500',
+      colorPrimary: '#0ea5e9',
       fontFamily: 'Noto Sans',
       colorLink: '#000',
-      colorLinkHover: '#ff6500',
-      colorLinkActive: '#ff6500',
+      colorLinkHover: '#0ea5e9',
+      colorLinkActive: '#0ea5e9',
     },
     algorithm: theme.defaultAlgorithm,
   });
@@ -29,7 +29,7 @@ function App() {
       <ConfigProvider theme={themeConfig}>
         <HappyProvider>
           <Layout
-            className={`min-h-[200vh]${
+            className={`w-screen${
               themeConfig.algorithm === theme.defaultAlgorithm ? ' bg-neutral-50 ' : ''
             } transition-all duration-500 ease-linear`}
           >
@@ -37,7 +37,7 @@ function App() {
             <Button
               type="dashed"
               size="large"
-              className="w-16 h-16 text-3xl fixed bottom-0 right-0 m-8"
+              className="w-16 h-16 text-3xl fixed bottom-16 left-16"
               onClick={toggleDarkMode}
             >
               <span className="overflow-hidden translate-y-1 translate-x-0.5">

@@ -11,7 +11,10 @@ const HeaderComponent: React.FC = () => {
       <div className="h-full flex justify-between items-center">
         <Button size="large" className="border-none bg-transparent shadow-none p-0 h-full">
           <Link to="/">
-            <img className="h-full" src="/logo.png" alt="logo" />
+            <span className="h-full flex items-center gap-2">
+              <img className="h-full" src="/logo.png" alt="logo" />
+              <span className="font-bold text-2xl text-[#31b8ee]">ViEntPlay</span>
+            </span>
           </Link>
         </Button>
 

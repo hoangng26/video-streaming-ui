@@ -1,3 +1,4 @@
+import FooterComponent from '@/components/FooterComponent';
 import HeaderComponent from '@/components/HeaderComponent';
 import { Content } from 'antd/es/layout/layout';
 import React from 'react';
@@ -10,6 +11,7 @@ const MainLayout: React.FC = () => {
       <Content>
         <Outlet />
       </Content>
+      <FooterComponent />
     </div>
   );
 };

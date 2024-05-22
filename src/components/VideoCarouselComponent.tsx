@@ -15,6 +15,7 @@ const VideoCarouselComponent: React.FC<PropsWithChildren<VideoCarouselProps>> = 
     arrows: true,
     dots: false,
     infinite: false,
+    lazyLoad: 'progressive',
     draggable: true,
     swipe: true,
     swipeToSlide: true,
@@ -42,12 +43,12 @@ const CarouselArrowLeft: React.FC<CustomArrowProps> = ({ currentSlide, slideCoun
       {...props}
       className={`slick-prev slick-arrow${
         currentSlide === 0 ? ' slick-disabled ' : ' '
-      }after:content-none w-fit h-fit text-3xl`}
+      }after:content-none w-fit h-fit text-3xl -translate-y-full`}
       aria-hidden="true"
       aria-disabled={currentSlide === 0 ? true : false}
       type="button"
     >
-      <span className="hover:bg-gradient-to-l hover:from-transparent hover:from-0% hover:to-orange-custom hover:to-[500%] rounded-md p-2">
+      <span className="hover:bg-gradient-to-l hover:from-transparent hover:from-0% hover:to-sky-500 hover:to-[300%] rounded-md p-2 py-4">
         <LeftOutlined />
       </span>
     </button>
@@ -64,12 +65,12 @@ const CarouselArrowRight: React.FC<CustomArrowProps> = ({ currentSlide, slideCou
       {...props}
       className={`slick-next slick-arrow${
         currentSlide === slideCount - 1 ? ' slick-disabled ' : ' '
-      }after:content-none w-fit h-fit text-3xl`}
+      }after:content-none w-fit h-fit text-3xl -translate-y-full`}
       aria-hidden="true"
       aria-disabled={currentSlide === slideCount - 1 ? true : false}
       type="button"
     >
-      <span className="hover:bg-gradient-to-r hover:from-transparent hover:from-0% hover:to-orange-custom hover:to-[500%] rounded-md p-2">
+      <span className="hover:bg-gradient-to-r hover:from-transparent hover:from-0% hover:to-sky-500 hover:to-[300%] rounded-md p-2 py-4">
         <RightOutlined />
       </span>
     </button>

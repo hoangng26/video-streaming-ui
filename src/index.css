@@ -18,14 +18,24 @@
     font-variation-settings: 'wdth' 100;
   }
 
+  :root {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  :root:hover {
+    overflow-y: auto;
+  }
+
   ::-webkit-scrollbar {
     width: 4px;
-    background: transparent;
+    background-color: transparent;
   }
 
   ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 1rem;
+    border: 1px solid transparent;
   }
 
   ::-webkit-scrollbar-track {

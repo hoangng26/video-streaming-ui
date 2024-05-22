@@ -22,16 +22,11 @@ const BannerCarouselComponent: React.FC = () => {
     <Carousel {...setting}>
       <div className="rounded-xl overflow-hidden relative">
         <img src="/doraemon_landscape.jpg" alt="doraemon_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+        <div className="text-white absolute left-0 bottom-0 p-8 pt-16 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
           <p className="font-bold text-3xl">Final: T1 vs Weibo Gaming</p>
           <p className="my-4">League of Legends Worlds Championship 2023</p>
           <div>
-            <Button
-              type="primary"
-              size="large"
-              className="bg-orange-custom hover:opacity-75 font-semibold"
-              icon={<PlayCircleFilled />}
-            >
+            <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
               Xem ngay
             </Button>
 
@@ -48,16 +43,11 @@ const BannerCarouselComponent: React.FC = () => {
 
       <div className="rounded-xl overflow-hidden relative">
         <img src="/tear-of-steels_landscape.png" alt="tear-of-steels_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+        <div className="text-white absolute left-0 bottom-0 p-8 pt-16 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
           <p className="font-bold text-3xl">Final: T1 vs Weibo Gaming</p>
           <p className="my-4">League of Legends Worlds Championship 2023</p>
           <div>
-            <Button
-              type="primary"
-              size="large"
-              className="bg-orange-custom hover:opacity-75 font-semibold"
-              icon={<PlayCircleFilled />}
-            >
+            <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
               Xem ngay
             </Button>
 
@@ -74,16 +64,11 @@ const BannerCarouselComponent: React.FC = () => {
 
       <div className="rounded-xl overflow-hidden relative">
         <img src="/tinoaa-landscape.jpg" alt="tinoaa_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+        <div className="text-white absolute left-0 bottom-0 p-8 pt-16 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
           <p className="font-bold text-3xl">Final: T1 vs Weibo Gaming</p>
           <p className="my-4">League of Legends Worlds Championship 2023</p>
           <div>
-            <Button
-              type="primary"
-              size="large"
-              className="bg-orange-custom hover:opacity-75 font-semibold"
-              icon={<PlayCircleFilled />}
-            >
+            <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
               Xem ngay
             </Button>
 
@@ -100,16 +85,11 @@ const BannerCarouselComponent: React.FC = () => {
 
       <div className="rounded-xl overflow-hidden relative">
         <img src="/worlds-23_landscape.jpg" alt="worlds-23_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+        <div className="text-white absolute left-0 bottom-0 p-8 pt-16 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
           <p className="font-bold text-3xl">Final: T1 vs Weibo Gaming</p>
           <p className="my-4">League of Legends Worlds Championship 2023</p>
           <div>
-            <Button
-              type="primary"
-              size="large"
-              className="bg-orange-custom hover:opacity-75 font-semibold"
-              icon={<PlayCircleFilled />}
-            >
+            <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
               Xem ngay
             </Button>
 
@@ -144,7 +124,7 @@ const CarouselArrowLeft: React.FC<CustomArrowProps> = ({ currentSlide, slideCoun
       aria-disabled={currentSlide === 0 ? true : false}
       type="button"
     >
-      <span className="hover:bg-gradient-to-l hover:from-transparent hover:from-0% hover:to-orange-custom hover:to-[500%] rounded-md p-2">
+      <span className="hover:bg-gradient-to-l hover:from-transparent hover:from-0% hover:to-sky-500 hover:to-[300%] rounded-md p-2 py-8">
         <LeftOutlined />
       </span>
     </button>
@@ -166,7 +146,7 @@ const CarouselArrowRight: React.FC<CustomArrowProps> = ({ currentSlide, slideCou
       aria-disabled={currentSlide === slideCount - 1 ? true : false}
       type="button"
     >
-      <span className="hover:bg-gradient-to-r hover:from-transparent hover:from-0% hover:to-orange-custom hover:to-[500%] rounded-md p-2">
+      <span className="hover:bg-gradient-to-r hover:from-transparent hover:from-0% hover:to-sky-500 hover:to-[300%] rounded-md p-2 py-8">
         <RightOutlined />
       </span>
     </button>
