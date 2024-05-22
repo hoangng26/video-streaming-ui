@@ -12,8 +12,8 @@ const HeaderComponent: React.FC = () => {
         <Button size="large" className="border-none bg-transparent shadow-none p-0 h-full">
           <Link to="/">
             <span className="h-full flex items-center">
-              <img className="h-full scale-75" src="/logo.png" alt="logo" />
-              <span className="font-bold text-xl text-[#33baf0]">ViENPlay</span>
+              <img className="h-full scale-[80%] -translate-x-[20%]" src="/logo.png" alt="logo" />
+              <span className="font-bold text-xl text-[#33baf0] -translate-x-[10%]">ViENPlay</span>
             </span>
           </Link>
         </Button>
