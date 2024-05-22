@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'blue-custom': '#1677ff',
+        'blue-custom': '#33baf0',
       },
       boxShadow: {
         custom:

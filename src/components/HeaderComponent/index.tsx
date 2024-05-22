@@ -13,7 +13,7 @@ const HeaderComponent: React.FC = () => {
           <Link to="/">
             <span className="h-full flex items-center">
               <img className="h-full scale-75" src="/logo.png" alt="logo" />
-              <span className="font-bold text-xl text-[#31b8ee]">ViENPlay</span>
+              <span className="font-bold text-xl text-[#33baf0]">ViENPlay</span>
             </span>
           </Link>
         </Button>

@@ -2,6 +2,7 @@ import { HeartOutlined, LeftOutlined, PlayCircleFilled, RightOutlined, ShareAltO
 import { CustomArrowProps } from '@ant-design/react-slick';
 import { Button, Carousel, CarouselProps } from 'antd';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BannerCarouselComponent: React.FC = () => {
   const setting: CarouselProps = {
@@ -22,8 +23,12 @@ const BannerCarouselComponent: React.FC = () => {
     <Carousel {...setting}>
       <div className="rounded-xl overflow-hidden relative">
         <img src="/doraemon_landscape.jpg" alt="doraemon_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 pt-16 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <p className="font-bold text-3xl">Final: T1 vs Weibo Gaming</p>
+        <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+          <Link to="#!">
+            <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
+              Final: T1 vs Weibo Gaming
+            </p>
+          </Link>
           <p className="my-4">League of Legends Worlds Championship 2023</p>
           <div>
             <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
@@ -43,8 +48,12 @@ const BannerCarouselComponent: React.FC = () => {
 
       <div className="rounded-xl overflow-hidden relative">
         <img src="/tear-of-steels_landscape.png" alt="tear-of-steels_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 pt-16 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <p className="font-bold text-3xl">Final: T1 vs Weibo Gaming</p>
+        <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+          <Link to="#!">
+            <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
+              Final: T1 vs Weibo Gaming
+            </p>
+          </Link>
           <p className="my-4">League of Legends Worlds Championship 2023</p>
           <div>
             <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
@@ -64,8 +73,12 @@ const BannerCarouselComponent: React.FC = () => {
 
       <div className="rounded-xl overflow-hidden relative">
         <img src="/tinoaa-landscape.jpg" alt="tinoaa_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 pt-16 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <p className="font-bold text-3xl">Final: T1 vs Weibo Gaming</p>
+        <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+          <Link to="#!">
+            <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
+              Final: T1 vs Weibo Gaming
+            </p>
+          </Link>
           <p className="my-4">League of Legends Worlds Championship 2023</p>
           <div>
             <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
@@ -85,8 +98,12 @@ const BannerCarouselComponent: React.FC = () => {
 
       <div className="rounded-xl overflow-hidden relative">
         <img src="/worlds-23_landscape.jpg" alt="worlds-23_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 pt-16 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <p className="font-bold text-3xl">Final: T1 vs Weibo Gaming</p>
+        <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+          <Link to="#!">
+            <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
+              Final: T1 vs Weibo Gaming
+            </p>
+          </Link>
           <p className="my-4">League of Legends Worlds Championship 2023</p>
           <div>
             <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>

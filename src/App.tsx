@@ -8,11 +8,11 @@ import { router } from './routes';
 function App() {
   const [themeConfig, setThemeConfig] = useState<ThemeConfig>({
     token: {
-      colorPrimary: '#0ea5e9',
+      colorPrimary: '#33baf0',
       fontFamily: 'Noto Sans',
       colorLink: '#000',
-      colorLinkHover: '#0ea5e9',
-      colorLinkActive: '#0ea5e9',
+      colorLinkHover: '#33baf0',
+      colorLinkActive: '#33baf0',
     },
     algorithm: theme.defaultAlgorithm,
   });
