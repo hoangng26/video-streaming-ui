@@ -42,7 +42,7 @@ const HomePage: React.FC = () => {
 
       <VideoCarouselComponent title="Trending" slideToShow={5}>
         <div>
-          <div className="h-[27vh] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
+          <div className="h-[22rem] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
             <img className="h-full w-full object-cover" src="/doraemon.jpg" alt="doraemon_alt" />
           </div>
           <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">
@@ -51,7 +51,7 @@ const HomePage: React.FC = () => {
         </div>
 
         <div>
-          <div className="h-[27vh] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
+          <div className="h-[22rem] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
             <img className="h-full w-full object-cover" src="/doraemonvn.jpg" alt="doraemon_alt" />
           </div>
           <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">
@@ -60,21 +60,21 @@ const HomePage: React.FC = () => {
         </div>
 
         <div>
-          <div className="h-[27vh] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
+          <div className="h-[22rem] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
             <img className="h-full w-full object-cover" src="/tear-of-steels.png" alt="tear-of-steels_alt" />
           </div>
           <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">Tear of Steel</p>
         </div>
 
         <div>
-          <div className="h-[27vh] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
+          <div className="h-[22rem] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
             <img className="h-full w-full object-cover" src="/tinoaa.jpg" alt="tinoaa_alt" />
           </div>
           <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">There's No One At All</p>
         </div>
 
         <div>
-          <div className="h-[27vh] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
+          <div className="h-[22rem] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
             <img className="h-full w-full object-cover" src="/worlds-23.jpg" alt="worlds-23_alt" />
           </div>
           <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">
@@ -83,7 +83,7 @@ const HomePage: React.FC = () => {
         </div>
 
         <div>
-          <div className="h-[27vh] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
+          <div className="h-[22rem] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
             <img className="h-full w-full object-cover" src="/doraemon.jpg" alt="doraemon_alt" />
           </div>
           <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">
@@ -92,7 +92,7 @@ const HomePage: React.FC = () => {
         </div>
 
         <div>
-          <div className="h-[27vh] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
+          <div className="h-[22rem] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
             <img className="h-full w-full object-cover" src="/doraemonvn.jpg" alt="doraemon_alt" />
           </div>
           <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">
@@ -101,21 +101,21 @@ const HomePage: React.FC = () => {
         </div>
 
         <div>
-          <div className="h-[27vh] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
+          <div className="h-[22rem] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
             <img className="h-full w-full object-cover" src="/tear-of-steels.png" alt="tear-of-steels_alt" />
           </div>
           <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">Tear of Steel</p>
         </div>
 
         <div>
-          <div className="h-[27vh] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
+          <div className="h-[22rem] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
             <img className="h-full w-full object-cover" src="/tinoaa.jpg" alt="tinoaa_alt" />
           </div>
           <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">There's No One At All</p>
         </div>
 
         <div>
-          <div className="h-[27vh] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
+          <div className="h-[22rem] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none">
             <img className="h-full w-full object-cover" src="/worlds-23.jpg" alt="worlds-23_alt" />
           </div>
           <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">

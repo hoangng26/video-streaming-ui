@@ -8,9 +8,12 @@ const BannerCarouselComponent: React.FC = () => {
   const setting: CarouselProps = {
     slidesToShow: 1,
     slidesToScroll: 1,
+    speed: 1000,
     arrows: true,
     infinite: true,
     autoplay: true,
+    fade: true,
+    waitForAnimate: false,
     lazyLoad: 'progressive',
     draggable: true,
     swipe: true,

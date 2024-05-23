@@ -16,7 +16,6 @@ const VideoCarouselComponent: React.FC<PropsWithChildren<VideoCarouselProps>> = 
     dots: false,
     infinite: false,
     lazyLoad: 'progressive',
-    draggable: true,
     swipe: true,
     swipeToSlide: true,
     prevArrow: <CarouselArrowLeft />,
