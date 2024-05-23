@@ -27,7 +27,7 @@ const BannerCarouselComponent: React.FC = () => {
       <div className="rounded-xl overflow-hidden relative">
         <img src="/doraemon_landscape.jpg" alt="doraemon_alt" />
         <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <Link to="#!">
+          <Link to="/watch/0">
             <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
               Final: T1 vs Weibo Gaming
             </p>
@@ -52,7 +52,7 @@ const BannerCarouselComponent: React.FC = () => {
       <div className="rounded-xl overflow-hidden relative">
         <img src="/tear-of-steels_landscape.png" alt="tear-of-steels_alt" />
         <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <Link to="#!">
+          <Link to="/watch/0">
             <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
               Final: T1 vs Weibo Gaming
             </p>
@@ -77,7 +77,7 @@ const BannerCarouselComponent: React.FC = () => {
       <div className="rounded-xl overflow-hidden relative">
         <img src="/tinoaa-landscape.jpg" alt="tinoaa_alt" />
         <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <Link to="#!">
+          <Link to="/watch/0">
             <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
               Final: T1 vs Weibo Gaming
             </p>
@@ -102,7 +102,7 @@ const BannerCarouselComponent: React.FC = () => {
       <div className="rounded-xl overflow-hidden relative">
         <img src="/worlds-23_landscape.jpg" alt="worlds-23_alt" />
         <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <Link to="#!">
+          <Link to="/watch/0">
             <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
               Final: T1 vs Weibo Gaming
             </p>

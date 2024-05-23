@@ -9,19 +9,19 @@ const NavLinkComponent: React.FC = () => {
         <CustomNavLink to="/">Home</CustomNavLink>
       </li>
       <li>
-        <CustomNavLink to="#!">TV Show</CustomNavLink>
+        <CustomNavLink to="/watch/0">TV Show</CustomNavLink>
       </li>
       <li>
-        <CustomNavLink to="#!">Drama</CustomNavLink>
+        <CustomNavLink to="/watch/0">Drama</CustomNavLink>
       </li>
       <li>
-        <CustomNavLink to="#!">Movie</CustomNavLink>
+        <CustomNavLink to="/watch/0">Movie</CustomNavLink>
       </li>
       <li>
-        <CustomNavLink to="#!">Sports</CustomNavLink>
+        <CustomNavLink to="/watch/0">Sports</CustomNavLink>
       </li>
       <li>
-        <CustomNavLink to="#!">eSports</CustomNavLink>
+        <CustomNavLink to="/watch/0">eSports</CustomNavLink>
       </li>
     </ul>
   );

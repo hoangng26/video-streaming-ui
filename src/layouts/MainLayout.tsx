@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 
 const MainLayout: React.FC = () => {
   return (
-    <div className="lg:max-w-[960px] xl:max-w-[1180px] lg:mx-auto px-4">
+    <div className="lg:w-[960px] xl:w-[1180px] lg:mx-auto px-4">
       <HeaderComponent />
       <Content>
         <Outlet />

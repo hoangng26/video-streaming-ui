@@ -10,9 +10,6 @@ function App() {
     token: {
       colorPrimary: '#33baf0',
       fontFamily: 'Noto Sans',
-      colorLink: '#000',
-      colorLinkHover: '#33baf0',
-      colorLinkActive: '#33baf0',
     },
     algorithm: theme.defaultAlgorithm,
   });
@@ -29,7 +26,7 @@ function App() {
       <ConfigProvider theme={themeConfig}>
         <HappyProvider>
           <Layout
-            className={`w-screen${
+            className={`w-screen min-h-screen${
               themeConfig.algorithm === theme.defaultAlgorithm ? ' bg-neutral-50 ' : ''
             } transition-all duration-500 ease-linear`}
           >

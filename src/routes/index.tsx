@@ -1,5 +1,6 @@
 import MainLayout from '@/layouts/MainLayout';
 import HomePage from '@/pages/HomePage';
+import WatchPage from '@/pages/WatchPage';
 import { createBrowserRouter } from 'react-router-dom';
 
 export const router = createBrowserRouter([
@@ -12,8 +13,8 @@ export const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: 'test',
-        element: <h1>Hello, this is a test page!!</h1>,
+        path: '/watch/:id',
+        element: <WatchPage />,
       },
     ],
   },
