@@ -1,3 +1,4 @@
+import AnimatedLayout from '@/components/AnimatedLayout';
 import MainLayout from '@/layouts/MainLayout';
 import HomePage from '@/pages/HomePage';
 import WatchPage from '@/pages/WatchPage';
@@ -9,12 +10,18 @@ export const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        index: true,
-        element: <HomePage />,
-      },
-      {
-        path: '/watch/:id',
-        element: <WatchPage />,
+        path: '',
+        element: <AnimatedLayout />,
+        children: [
+          {
+            index: true,
+            element: <HomePage />,
+          },
+          {
+            path: '/watch/:id',
+            element: <WatchPage />,
+          },
+        ],
       },
     ],
   },

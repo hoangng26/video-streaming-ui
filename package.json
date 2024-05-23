@@ -13,11 +13,15 @@
     "@ant-design/happy-work-theme": "^1.0.0",
     "@ant-design/icons": "^5.3.7",
     "antd": "^5.17.3",
+    "framer-motion": "^11.2.6",
+    "jquery": "^3.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
+    "@rollup/plugin-inject": "^5.0.5",
+    "@types/jquery": "^3.5.30",
     "@types/node": "^20.12.12",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",

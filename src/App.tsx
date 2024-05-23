@@ -31,6 +31,7 @@ function App() {
             } transition-all duration-500 ease-linear`}
           >
             <RouterProvider router={router} />
+
             <Button
               type="dashed"
               size="large"
@@ -43,6 +44,7 @@ function App() {
                     themeConfig.algorithm === theme.defaultAlgorithm ? 'scale-100' : 'scale-0'
                   }`}
                 />
+
                 <SunOutlined
                   className={`-translate-x-[calc(100%)] transition-transform duration-500 ${
                     themeConfig.algorithm === theme.darkAlgorithm ? 'scale-100' : 'scale-0'
