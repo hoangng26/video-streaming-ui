@@ -10,21 +10,54 @@ interface VideoCarouselProps {
 
 const VideoCarouselComponent: React.FC<PropsWithChildren<VideoCarouselProps>> = ({ children, title, slideToShow }) => {
   const settings: CarouselProps = {
-    slidesToShow: slideToShow || 3,
+    slidesToShow: slideToShow && slideToShow < 6 ? slideToShow : 6,
     slidesToScroll: 1,
     arrows: true,
     dots: false,
     infinite: false,
     lazyLoad: 'progressive',
+    draggable: true,
     swipe: true,
     swipeToSlide: true,
     prevArrow: <CarouselArrowLeft />,
     nextArrow: <CarouselArrowRight />,
+    responsive: [
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: slideToShow && slideToShow < 2 ? slideToShow : 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+    ],
   };
 
   return (
     <div className="py-8">
-      <h2 className="font-bold text-2xl mb-4">{title}</h2>
+      <h2 className="font-bold text-2xl mb-4 ">{title}</h2>
       <Carousel {...settings}>{children}</Carousel>
     </div>
   );

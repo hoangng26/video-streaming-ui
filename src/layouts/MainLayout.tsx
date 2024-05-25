@@ -7,7 +7,7 @@ const FooterComponent = lazy(() => import('@/components/FooterComponent'));
 
 const MainLayout: React.FC = () => {
   return (
-    <div className="lg:w-[960px] xl:w-[1180px] lg:mx-auto px-4">
+    <div className="lg:w-[960px] xl:w-[1180px] 2xl:w-[1440px] lg:mx-auto px-4">
       <HeaderComponent />
       <Suspense fallback={<LoadingComponent fullscreen />}>
         <Content>

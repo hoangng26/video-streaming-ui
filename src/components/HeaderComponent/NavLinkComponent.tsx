@@ -31,10 +31,10 @@ export default NavLinkComponent;
 
 const CustomNavLink: React.FC<PropsWithChildren<{ to: string }>> = ({ to, children }) => {
   return (
-    <Button size="large" className="border-none shadow-none bg-transparent transition-none">
-      <Link to={to}>
+    <Link to={to}>
+      <Button size="large" className="border-none shadow-none bg-transparent transition-none">
         <span className="font-medium">{children}</span>
-      </Link>
-    </Button>
+      </Button>
+    </Link>
   );
 };
