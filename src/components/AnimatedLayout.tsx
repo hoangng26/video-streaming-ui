@@ -18,7 +18,7 @@ const AnimatedLayout: React.FC = () => {
 
   const pageTransition: Transition = {
     type: 'easeInOut',
-    duration: 0.5,
+    duration: 0.75,
   };
 
   return (
