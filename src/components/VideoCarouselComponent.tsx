@@ -11,7 +11,7 @@ interface VideoCarouselProps {
 const VideoCarouselComponent: React.FC<PropsWithChildren<VideoCarouselProps>> = ({ children, title, slideToShow }) => {
   const settings: CarouselProps = {
     slidesToShow: slideToShow || 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     arrows: true,
     dots: false,
     infinite: false,

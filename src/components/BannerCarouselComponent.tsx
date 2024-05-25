@@ -1,6 +1,6 @@
 import { HeartOutlined, LeftOutlined, PlayCircleFilled, RightOutlined, ShareAltOutlined } from '@ant-design/icons';
 import { CustomArrowProps } from '@ant-design/react-slick';
-import { Button, Carousel, CarouselProps } from 'antd';
+import { Button, Card, Carousel, CarouselProps, Image } from 'antd';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -24,104 +24,120 @@ const BannerCarouselComponent: React.FC = () => {
 
   return (
     <Carousel {...setting}>
-      <div className="rounded-xl overflow-hidden relative">
-        <img src="/doraemon_landscape.jpg" alt="doraemon_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <Link to="/watch/0">
-            <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
-              Final: T1 vs Weibo Gaming
-            </p>
-          </Link>
-          <p className="my-4">League of Legends Worlds Championship 2023</p>
-          <div>
-            <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
-              Xem ngay
-            </Button>
+      <div>
+        <Card
+          cover={<Image preview={false} src="/doraemon_landscape.jpg" alt="doraemon_alt" />}
+          className="rounded-xl overflow-hidden relative h-fit [&>.ant-card-body]:p-0"
+        >
+          <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+            <Link to="/watch/0">
+              <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
+                Final: T1 vs Weibo Gaming
+              </p>
+            </Link>
+            <p className="my-4">League of Legends Worlds Championship 2023</p>
+            <div>
+              <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
+                Xem ngay
+              </Button>
 
-            <Button shape="circle" size="large" className="ml-4">
-              <HeartOutlined className="-translate-y-[3px]" />
-            </Button>
+              <Button shape="circle" size="large" className="ml-4">
+                <HeartOutlined className="-translate-y-[3px]" />
+              </Button>
 
-            <Button shape="circle" size="large" className="ml-4">
-              <ShareAltOutlined className="-translate-y-[3px]" />
-            </Button>
+              <Button shape="circle" size="large" className="ml-4">
+                <ShareAltOutlined className="-translate-y-[3px]" />
+              </Button>
+            </div>
           </div>
-        </div>
+        </Card>
       </div>
 
-      <div className="rounded-xl overflow-hidden relative">
-        <img src="/tear-of-steels_landscape.png" alt="tear-of-steels_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <Link to="/watch/0">
-            <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
-              Final: T1 vs Weibo Gaming
-            </p>
-          </Link>
-          <p className="my-4">League of Legends Worlds Championship 2023</p>
-          <div>
-            <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
-              Xem ngay
-            </Button>
+      <div>
+        <Card
+          cover={<Image preview={false} src="/tear-of-steels_landscape.png" alt="tear-of-steels_alt" />}
+          className="rounded-xl overflow-hidden relative h-fit [&>.ant-card-body]:p-0"
+        >
+          <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+            <Link to="/watch/0">
+              <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
+                Final: T1 vs Weibo Gaming
+              </p>
+            </Link>
+            <p className="my-4">League of Legends Worlds Championship 2023</p>
+            <div>
+              <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
+                Xem ngay
+              </Button>
 
-            <Button shape="circle" size="large" className="ml-4">
-              <HeartOutlined className="-translate-y-[3px]" />
-            </Button>
+              <Button shape="circle" size="large" className="ml-4">
+                <HeartOutlined className="-translate-y-[3px]" />
+              </Button>
 
-            <Button shape="circle" size="large" className="ml-4">
-              <ShareAltOutlined className="-translate-y-[3px]" />
-            </Button>
+              <Button shape="circle" size="large" className="ml-4">
+                <ShareAltOutlined className="-translate-y-[3px]" />
+              </Button>
+            </div>
           </div>
-        </div>
+        </Card>
       </div>
 
-      <div className="rounded-xl overflow-hidden relative">
-        <img src="/tinoaa-landscape.jpg" alt="tinoaa_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <Link to="/watch/0">
-            <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
-              Final: T1 vs Weibo Gaming
-            </p>
-          </Link>
-          <p className="my-4">League of Legends Worlds Championship 2023</p>
-          <div>
-            <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
-              Xem ngay
-            </Button>
+      <div>
+        <Card
+          cover={<Image preview={false} src="/tinoaa-landscape.jpg" alt="tinoaa_alt" />}
+          className="rounded-xl overflow-hidden relative h-fit [&>.ant-card-body]:p-0"
+        >
+          <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+            <Link to="/watch/0">
+              <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
+                Final: T1 vs Weibo Gaming
+              </p>
+            </Link>
+            <p className="my-4">League of Legends Worlds Championship 2023</p>
+            <div>
+              <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
+                Xem ngay
+              </Button>
 
-            <Button shape="circle" size="large" className="ml-4">
-              <HeartOutlined className="-translate-y-[3px]" />
-            </Button>
+              <Button shape="circle" size="large" className="ml-4">
+                <HeartOutlined className="-translate-y-[3px]" />
+              </Button>
 
-            <Button shape="circle" size="large" className="ml-4">
-              <ShareAltOutlined className="-translate-y-[3px]" />
-            </Button>
+              <Button shape="circle" size="large" className="ml-4">
+                <ShareAltOutlined className="-translate-y-[3px]" />
+              </Button>
+            </div>
           </div>
-        </div>
+        </Card>
       </div>
 
-      <div className="rounded-xl overflow-hidden relative">
-        <img src="/worlds-23_landscape.jpg" alt="worlds-23_alt" />
-        <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-          <Link to="/watch/0">
-            <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
-              Final: T1 vs Weibo Gaming
-            </p>
-          </Link>
-          <p className="my-4">League of Legends Worlds Championship 2023</p>
-          <div>
-            <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
-              Xem ngay
-            </Button>
+      <div>
+        <Card
+          cover={<Image preview={false} src="/worlds-23_landscape.jpg" alt="worlds-23_alt" />}
+          className="rounded-xl overflow-hidden relative h-fit [&>.ant-card-body]:p-0"
+        >
+          <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
+            <Link to="/watch/0">
+              <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
+                Final: T1 vs Weibo Gaming
+              </p>
+            </Link>
+            <p className="my-4">League of Legends Worlds Championship 2023</p>
+            <div>
+              <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
+                Xem ngay
+              </Button>
 
-            <Button shape="circle" size="large" className="ml-4">
-              <HeartOutlined className="-translate-y-[3px]" />
-            </Button>
+              <Button shape="circle" size="large" className="ml-4">
+                <HeartOutlined className="-translate-y-[3px]" />
+              </Button>
 
-            <Button shape="circle" size="large" className="ml-4">
-              <ShareAltOutlined className="-translate-y-[3px]" />
-            </Button>
+              <Button shape="circle" size="large" className="ml-4">
+                <ShareAltOutlined className="-translate-y-[3px]" />
+              </Button>
+            </div>
           </div>
-        </div>
+        </Card>
       </div>
     </Carousel>
   );
