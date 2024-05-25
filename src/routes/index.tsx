@@ -1,4 +1,4 @@
-import AnimatedLayout from '@/components/AnimatedLayout';
+import AnimatedLayout from '@/layouts/AnimatedLayout';
 import MainLayout from '@/layouts/MainLayout';
 import HomePage from '@/pages/HomePage';
 import WatchPage from '@/pages/WatchPage';

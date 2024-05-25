@@ -1,9 +1,9 @@
 import { HeartOutlined, PlayCircleFilled, ShareAltOutlined } from '@ant-design/icons';
 import { Button, Card, Image } from 'antd';
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import BannerCarouselComponent from '@/components/BannerCarouselComponent';
+import LinkWrapper from '@/components/LinkWrapper';
 import VideoCarouselComponent from '@/components/VideoCarouselComponent';
 
 interface Poster {
@@ -86,24 +86,20 @@ const HomePage: React.FC = () => {
     <>
       <BannerCarouselComponent>
         {landscapePoster.concat(landscapePoster.slice()).map((item, index) => (
-          <div key={`banner-${index}_${getImgTitleKey(item.title)}`}>
+          <LinkWrapper to={item.href} key={`banner-${index}_${getImgTitleKey(item.title)}`}>
             <Card
               cover={<Image preview={false} src={item.srcImg} alt={`${getImgTitleKey(item.title)}_alt`} />}
               className="rounded-xl overflow-hidden relative h-fit [&>.ant-card-body]:p-0"
             >
               <div className="text-white absolute left-0 bottom-0 p-8 pt-20 w-full bg-gradient-to-b from-transparent from-0% to-black to-[150%]">
-                <Link to={item.href}>
-                  <span className="font-bold text-3xl text-white hover:text-blue-custom transition-colors">
-                    {item.title}
-                  </span>
-                </Link>
+                <p className="font-bold text-3xl text-white hover:text-blue-custom transition-colors w-fit">
+                  {item.title}
+                </p>
                 <p className="my-4">{item.category}</p>
                 <div>
-                  <Link to={item.href}>
-                    <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
-                      Xem ngay
-                    </Button>
-                  </Link>
+                  <Button type="primary" size="large" className="font-semibold" icon={<PlayCircleFilled />}>
+                    Xem ngay
+                  </Button>
 
                   <Button shape="circle" size="large" className="ml-4">
                     <HeartOutlined className="-translate-y-[3px]" />
@@ -115,26 +111,27 @@ const HomePage: React.FC = () => {
                 </div>
               </div>
             </Card>
-          </div>
+          </LinkWrapper>
         ))}
       </BannerCarouselComponent>
+
       <VideoCarouselComponent title="Latest Released" slideToShow={landscapePoster.length}>
         {landscapePoster.concat(landscapePoster.slice()).map((item, index) => (
-          <div key={`latest-${index}_${getImgTitleKey(item.title)}`}>
+          <LinkWrapper to={item.href} key={`latest-${index}_${getImgTitleKey(item.title)}`}>
             <Image
               preview={false}
               className="rounded-xl overflow-hidden scale-[98%] shadow-custom"
               src={item.srcImg}
               alt={`${getImgTitleKey(item.title)}_alt`}
             />
-            <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">{item.title}</p>
-          </div>
+            <span className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">{item.title}</span>
+          </LinkWrapper>
         ))}
       </VideoCarouselComponent>
 
       <VideoCarouselComponent title="Trending">
         {portraitPoster.concat(portraitPoster.slice()).map((item, index) => (
-          <div key={`latest-${index}_${getImgTitleKey(item.title)}`}>
+          <LinkWrapper to={item.href} key={`latest-${index}_${getImgTitleKey(item.title)}`}>
             <Image
               preview={false}
               className="object-cover h-[22rem] rounded-xl overflow-hidden scale-[98%] shadow-custom outline-none"
@@ -142,13 +139,13 @@ const HomePage: React.FC = () => {
               alt={`${getImgTitleKey(item.title)}_alt`}
             />
             <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">{item.title}</p>
-          </div>
+          </LinkWrapper>
         ))}
       </VideoCarouselComponent>
 
       <VideoCarouselComponent title="Top 10 Movie" slideToShow={5}>
         {landscapePoster.concat(landscapePoster.slice()).map((item, index) => (
-          <div key={`latest-${index}_${getImgTitleKey(item.title)}`}>
+          <LinkWrapper to={item.href} key={`latest-${index}_${getImgTitleKey(item.title)}`}>
             <Image
               preview={false}
               className="rounded-xl overflow-hidden scale-[98%] shadow-custom"
@@ -156,7 +153,7 @@ const HomePage: React.FC = () => {
               alt={`${getImgTitleKey(item.title)}_alt`}
             />
             <p className="w-11/12 translate-x-[1%] font-semibold text-base mt-4 line-clamp-1">{item.title}</p>
-          </div>
+          </LinkWrapper>
         ))}
       </VideoCarouselComponent>
     </>
