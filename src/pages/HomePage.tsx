@@ -1,87 +1,13 @@
+import BannerCarouselComponent from '@/components/BannerCarouselComponent';
+import LinkWrapper from '@/components/LinkWrapper';
+import VideoCarouselComponent from '@/components/VideoCarouselComponent';
+import { landscapePoster, portraitPoster } from '@/constants/TestVideoInfo';
+import { getImgTitleKey } from '@/utils';
 import { HeartOutlined, PlayCircleFilled, ShareAltOutlined } from '@ant-design/icons';
 import { Button, Card, Image } from 'antd';
 import React from 'react';
 
-import BannerCarouselComponent from '@/components/BannerCarouselComponent';
-import LinkWrapper from '@/components/LinkWrapper';
-import VideoCarouselComponent from '@/components/VideoCarouselComponent';
-
-interface Poster {
-  href: string;
-  srcImg: string;
-  title: string;
-  category: string;
-}
-
-const landscapePoster: Poster[] = [
-  {
-    href: '/watch/0',
-    srcImg: '/doraemon_landscape.jpg',
-    title: "Doraemon the Movie: Nobita's Little Star Wars (2022)",
-    category: 'Movie',
-  },
-  {
-    href: '/watch/0',
-    srcImg: '/tear-of-steels_landscape.png',
-    title: 'Tear of Steel',
-    category: 'Movie',
-  },
-  {
-    href: '/watch/0',
-    srcImg: '/tinoaa-landscape.jpg',
-    title: "There's No One At All",
-    category: 'Music',
-  },
-  {
-    href: '/watch/0',
-    srcImg: '/worlds-23_landscape.jpg',
-    title: 'Final: T1 vs Weibo Gaming',
-    category: 'League of Legends Worlds Championship 2023',
-  },
-];
-
-const portraitPoster: Poster[] = [
-  {
-    href: '/watch/0',
-    srcImg: '/doraemon.jpg',
-    title: "Doraemon the Movie: Nobita's Little Star Wars (2022)",
-    category: 'Movie',
-  },
-  {
-    href: '/watch/0',
-    srcImg: '/doraemonvn.jpg',
-    title: "Doraemon the Movie: Nobita's Little Star Wars (2022)",
-    category: 'Movie',
-  },
-  {
-    href: '/watch/0',
-    srcImg: '/tear-of-steels.png',
-    title: 'Tear of Steel',
-    category: 'Movie',
-  },
-  {
-    href: '/watch/0',
-    srcImg: '/tinoaa.jpg',
-    title: "There's No One At All",
-    category: 'Music',
-  },
-  {
-    href: '/watch/0',
-    srcImg: '/worlds-23.jpg',
-    title: 'Final: T1 vs Weibo Gaming',
-    category: 'League of Legends Worlds Championship 2023',
-  },
-];
-
 const HomePage: React.FC = () => {
-  const getImgTitleKey = (title: string) => {
-    return `${title
-      .toLowerCase()
-      .replace(/[\W]/g, ' ')
-      .trim()
-      .replace(/\s{1,}/g, '-')}`;
-  };
-
   return (
     <>
       <BannerCarouselComponent>

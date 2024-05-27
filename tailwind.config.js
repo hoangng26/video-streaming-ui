@@ -12,6 +12,6 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@vidstack/react/tailwind.cjs')],
   important: '#root',
 };
