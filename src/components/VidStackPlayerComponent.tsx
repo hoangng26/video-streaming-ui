@@ -15,11 +15,11 @@ import React, { useEffect } from 'react';
 const VidStackPlayerComponent: React.FC = () => {
   const textTracks: TrackProps[] = [
     {
-      src: '/english.srt',
-      label: 'Tiếng Việt',
-      language: 'vi-VN',
+      src: '/english.vtt',
+      label: 'English',
+      language: 'en-US',
       kind: 'subtitles',
-      type: 'srt',
+      type: 'vtt',
       default: true,
     },
   ];
@@ -34,7 +34,7 @@ const VidStackPlayerComponent: React.FC = () => {
 
   return (
     <MediaPlayer
-      src="/video.mp4"
+      src="https://youtu.be/R6MlUcmOul8"
       viewType="video"
       streamType="on-demand"
       logLevel="warn"
