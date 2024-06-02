@@ -1,7 +1,8 @@
-import { landscapePoster } from '@/constants/TestVideoInfo';
+import { VideoInfo } from '@/models/Video';
 import { getImgTitleKey } from '@/utils';
 import { Image, List } from 'antd';
 import Search from 'antd/es/input/Search';
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import LinkWrapper from '../LinkWrapper';
@@ -9,6 +10,7 @@ import LinkWrapper from '../LinkWrapper';
 const SearchComponent: React.FC = () => {
   const location = useLocation();
   const [prompt, setPrompt] = useState('');
+  const [videos, setVideos] = useState<VideoInfo[]>([]);
   const [isShowResult, setIsShowResult] = useState(false);
 
   const handleOnChangeInputEvent: React.ChangeEventHandler<HTMLInputElement> = (event) => {
@@ -17,7 +19,19 @@ const SearchComponent: React.FC = () => {
 
   useEffect(() => {
     const setShowResult = setTimeout(() => {
-      setIsShowResult(Boolean(prompt));
+      if (prompt) {
+        axios
+          .get('http://localhost:8000/api/video/all')
+          .then((response) => {
+            setVideos(response.data);
+            setIsShowResult(Boolean(response.data));
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      } else {
+        setIsShowResult(Boolean(prompt));
+      }
     }, 500);
 
     return () => {
@@ -46,18 +60,18 @@ const SearchComponent: React.FC = () => {
           display: isShowResult ? 'block' : 'none',
         }}
         itemLayout="horizontal"
-        dataSource={landscapePoster}
+        dataSource={videos}
         bordered
         renderItem={(item) => (
           <List.Item>
-            <LinkWrapper to={item.href}>
+            <LinkWrapper to={`/watch/${item.video_url}`}>
               <List.Item.Meta
                 className="[&>.ant-list-item-meta-avatar]:w-1/2"
                 avatar={
                   <Image
                     className="rounded border"
                     preview={false}
-                    src={item.srcImg}
+                    src={`http://localhost:8000/api/video/${item.video_url}/poster/landscape`}
                     alt={`${getImgTitleKey(item.title)}_alt`}
                   />
                 }
