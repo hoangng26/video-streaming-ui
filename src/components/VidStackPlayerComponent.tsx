@@ -12,7 +12,11 @@ import '@vidstack/react/player/styles/default/layouts/video.css';
 import '@vidstack/react/player/styles/default/theme.css';
 import React, { useEffect } from 'react';
 
-const VidStackPlayerComponent: React.FC = () => {
+interface PlayerProps {
+  videoId: string;
+}
+
+const VidStackPlayerComponent: React.FC<PlayerProps> = ({ videoId }) => {
   const textTracks: TrackProps[] = [
     {
       src: '/english.vtt',
@@ -34,7 +38,10 @@ const VidStackPlayerComponent: React.FC = () => {
 
   return (
     <MediaPlayer
-      src="https://youtu.be/R6MlUcmOul8"
+      src={{
+        src: `http://localhost:8000/api/watch/${videoId}/`,
+        type: 'video/mp4',
+      }}
       viewType="video"
       streamType="on-demand"
       logLevel="warn"

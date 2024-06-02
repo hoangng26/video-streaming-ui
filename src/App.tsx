@@ -35,7 +35,7 @@ function App() {
             <Button
               type="dashed"
               size="large"
-              className="w-16 h-16 text-3xl fixed bottom-16 left-16"
+              className="w-16 h-16 text-3xl fixed bottom-12 left-12"
               onClick={toggleDarkMode}
             >
               <span className="overflow-hidden translate-y-1 translate-x-0.5">

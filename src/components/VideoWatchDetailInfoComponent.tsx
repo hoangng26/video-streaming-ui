@@ -1,12 +1,17 @@
+import { VideoInfo } from '@/models/Video';
 import { HeartOutlined, ShareAltOutlined } from '@ant-design/icons';
 import { Button, Divider } from 'antd';
 import React from 'react';
 
-const VideoWatchDetailInfoComponent: React.FC = () => {
+interface DetailInfoProps {
+  videoInfo: VideoInfo;
+}
+
+const VideoWatchDetailInfoComponent: React.FC<DetailInfoProps> = ({ videoInfo }) => {
   return (
     <div className="grid grid-cols-5 mt-8 gap-20">
       <div className="col-span-3 grid gap-2">
-        <h1 className="text-xl font-semibold mb-1">Trailer Final: T1 vs Weibo Gaming</h1>
+        <h1 className="text-xl font-semibold mb-1">{videoInfo.title}</h1>
         <h2>League of Legends Worlds Championship 2023</h2>
         <div>
           <span className="text-red-500 font-black">HOT</span>

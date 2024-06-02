@@ -31,36 +31,3 @@ export const landscapePoster: Poster[] = [
     category: 'League of Legends Worlds Championship 2023',
   },
 ];
-
-export const portraitPoster: Poster[] = [
-  {
-    href: '/watch/0',
-    srcImg: '/doraemon.jpg',
-    title: "Doraemon the Movie: Nobita's Little Star Wars (2022)",
-    category: 'Movie',
-  },
-  {
-    href: '/watch/0',
-    srcImg: '/doraemonvn.jpg',
-    title: "Doraemon the Movie: Nobita's Little Star Wars (2022)",
-    category: 'Movie',
-  },
-  {
-    href: '/watch/0',
-    srcImg: '/tear-of-steels.png',
-    title: 'Tear of Steel',
-    category: 'Movie',
-  },
-  {
-    href: '/watch/0',
-    srcImg: '/tinoaa.jpg',
-    title: "There's No One At All",
-    category: 'Music',
-  },
-  {
-    href: '/watch/0',
-    srcImg: '/worlds-23.jpg',
-    title: 'Final: T1 vs Weibo Gaming',
-    category: 'League of Legends Worlds Championship 2023',
-  },
-];
