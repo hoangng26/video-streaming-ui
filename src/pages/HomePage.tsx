@@ -3,7 +3,7 @@ import LinkWrapper from '@/components/LinkWrapper';
 import LoadingComponent from '@/components/LoadingComponent';
 import VideoCarouselComponent from '@/components/VideoCarouselComponent';
 import { VideoInfo } from '@/models/Video';
-import { getImgTitleKey } from '@/utils';
+import { getImgTitleKey, shuffleArray } from '@/utils';
 import { HeartOutlined, PlayCircleFilled, ShareAltOutlined } from '@ant-design/icons';
 import { Button, Card, Image } from 'antd';
 import axios from 'axios';
@@ -64,7 +64,7 @@ const HomePage: React.FC = () => {
       </BannerCarouselComponent>
 
       <VideoCarouselComponent title="Latest Released" slideToShow={videos.length}>
-        {videos.concat(videos.slice()).map((item, index) => (
+        {shuffleArray(videos.concat(videos.slice())).map((item, index) => (
           <LinkWrapper to={`/watch/${item.video_url}`} key={`latest-${index}_${getImgTitleKey(item.title)}`}>
             <Image
               preview={false}
@@ -79,7 +79,7 @@ const HomePage: React.FC = () => {
       </VideoCarouselComponent>
 
       <VideoCarouselComponent title="Trending">
-        {videos.concat(videos.slice()).map((item, index) => (
+        {shuffleArray(videos.concat(videos.slice())).map((item, index) => (
           <LinkWrapper to={`/watch/${item.video_url}`} key={`latest-${index}_${getImgTitleKey(item.title)}`}>
             <Image
               preview={false}
@@ -94,7 +94,7 @@ const HomePage: React.FC = () => {
       </VideoCarouselComponent>
 
       <VideoCarouselComponent title="Top 10 Movie" slideToShow={5}>
-        {videos.concat(videos.slice()).map((item, index) => (
+        {shuffleArray(videos.concat(videos.slice())).map((item, index) => (
           <LinkWrapper to={`/watch/${item.video_url}`} key={`latest-${index}_${getImgTitleKey(item.title)}`}>
             <Image
               preview={false}
